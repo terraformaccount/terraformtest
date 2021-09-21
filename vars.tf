@@ -22,10 +22,7 @@ variable "resource_group_name" {
   description = "Name of the resource group"
   default="TARGDND"
 }
-variable "network_security_group" {
-  description = "Name of the network security group"
-  default="TANSGDND"
-}
+
 variable "virtual_network" {
   description = "Name of the virtual network"
   default="TAVNDND"
