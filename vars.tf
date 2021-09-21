@@ -13,19 +13,7 @@ variable "client_secret" {
 variable "vm_password" {
   default = "Admblabla!!!"
   }
-variable "admin" {
-  description = "Default user with root access"
- # type = "map"
-  default = {
-    name = "terraform"
-    public_key = ""
-  }
-}
 
-# variable "namespace" {
-#   description = "Prefix for resource names"
-#   default="cyphert"
-# }
 variable "vm_name" {
   description = "Name of the service"
   default="testing"
@@ -68,16 +56,6 @@ variable "allocation_method" {
   description = "Defines how an IP address is assigned. Options are Static or Dynamic."
   default     = "Dynamic"
 }
-#variable "os" {
-  #description = "Disk image with preinstalled OS"
- # type = "map"
- # default = {
-    #publisher = "OpenLogic"
-    #offer = "CentOS"
-    #sku = "7.4"
-    #os_version = "latest"
-  #}
-#}
 
 variable "os_type" {
   description = "OS Type of the VM. Valid values are - windows, linux"
@@ -102,11 +80,6 @@ variable "publisher" {
   }
 
 
-variable "tag" {
-  type   = string
-  default = "cypher"
-  }
-
 variable "offer" {
   type   = string
   default = "WindowsServer"
@@ -122,7 +95,7 @@ variable "os_version" {
   default = "latest"
   }
 
-# variable "domain_name_label" {
-#    type   = string
-#   default = "hcmx1234"
-#   }
+variable "domain_name_label" {
+    type   = string
+   default = "hcmx1234"
+   }
