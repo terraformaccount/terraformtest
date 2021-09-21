@@ -34,14 +34,6 @@ resource "azurerm_public_ip" "hcmxexample" {
  
 }
 
-data "azurerm_network_security_group" "hcmxexample" {
-  name                = var.network_security_group
-  #location            = var.location
-  resource_group_name = data.azurerm_resource_group.hcmxexample.name
-  }
-  
-
-
 data "azurerm_virtual_network" "hcmxexample" {
   name                = var.virtual_network
   #location            = data.azurerm_network_security_group.hcmxexample.location
