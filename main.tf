@@ -146,7 +146,7 @@ data "azurerm_network_interface" "hcmxexample" {
 
 }
 
-output "network_interface_name" {
+output "azurerm_network_interface_name" {
   value = data.azurerm_network_interface.hcmxexample.id
 }
 
@@ -160,7 +160,7 @@ output "primary_dns_name" {
 
 
 
-output "azurerm_network_interface" {
+output "network_interface_name" {
   value = azurerm_network_interface.hcmxexample.name
 }
 
